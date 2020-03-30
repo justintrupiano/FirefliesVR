@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2635333655900026209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2635333655900026211}
+  - component: {fileID: 2635333655900026210}
+  - component: {fileID: 2635333655900026212}
+  m_Layer: 0
+  m_Name: Fireflies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2635333655900026211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2635333655900026209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 500, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2635333655900026210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2635333655900026209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b06f1427b000e3499eb1f87dd5190d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentPrefab: {fileID: 660744614898273017, guid: c372f39a97274c449807df36faf5ef39,
+    type: 3}
+  agents: []
+  numAgents: 500
+  enviromentSize: 900
+  randomLocation: 1
+  flashBool: 1
+  copyBool: 1
+  stealBool: 1
+  harvestBool: 1
+  moveBool: 1
+  speed: 50
+  increaseAgeRate: 0.001
+  senseDistance: 500
+  currentlyFlashing: 0
+  flashingList: 
+  StartEnergy: 0
+  harvestAmount: 0.1
+  stealAmount: 0.1
+  copyCost: 0.5
+  flashCost: 1
+  moveCost: 0.5
+  noise: 0.005
+  neighborFlashInfluence: 0.01
+  flashPotentalIncrease: 0.005
+  count: 0
+  InvokeRepeatingBool: 0
+  recording: 1
+  fileName: 
+--- !u!114 &2635333655900026212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2635333655900026209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027578ad84570369aa8275d86d113f13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
